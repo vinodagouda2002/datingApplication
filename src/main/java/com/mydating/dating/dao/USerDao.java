@@ -35,7 +35,9 @@ public class USerDao {
 	public Optional<User> findUserById(int id, int top) {
 		return userRepository.findById(id);
 	}	
-	
+	public List<User> searchByName(String letters) {
+		return userRepository.searchByName(letters);
+	}
 	
 }
 	
